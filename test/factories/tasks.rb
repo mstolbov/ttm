@@ -4,7 +4,7 @@ FactoryGirl.define do
     description
     user
 
-    train :started do
+    trait :started do
       state { :started }
     end
   end
