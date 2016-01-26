@@ -7,4 +7,12 @@ FactoryGirl.define do
     "str#{n}" * 5
   end
 
+  sequence :name do |n|
+    "name#{n}" * 5
+  end
+
+  sequence :text, aliases: [:description] do |n|
+    FactoryGirl.generate(:string) * 100
+  end
+
 end
