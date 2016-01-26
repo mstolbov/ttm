@@ -6,8 +6,8 @@ gem 'rails', '4.2.5.1'
 gem 'pg'
 
 gem 'coffee-rails', '~> 4.1.0'
-
 gem 'jquery-rails'
+gem 'slim-rails'
 
 # Use ActiveModel has_secure_password
 gem 'bcrypt', '~> 3.1.7'
