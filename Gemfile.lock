@@ -134,6 +134,9 @@ GEM
     tilt (2.0.2)
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    validates (1.0.0)
+      activemodel (>= 3.0.0)
+      activesupport (>= 3.0.0)
     web-console (2.2.1)
       activemodel (>= 4.0)
       binding_of_caller (>= 0.7.2)
@@ -154,6 +157,7 @@ DEPENDENCIES
   rails (= 4.2.5.1)
   slim-rails
   state_machines-activerecord
+  validates
   web-console (~> 2.0)
 
 BUNDLED WITH
