@@ -4,6 +4,7 @@ ruby '2.2.4'
 
 gem 'rails', '4.2.5.1'
 gem 'pg'
+gem 'state_machines-activerecord'
 
 gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
