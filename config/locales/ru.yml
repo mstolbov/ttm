@@ -11,3 +11,11 @@ ru:
   sessions:
     new:
       submit: Войти
+  dashboards:
+    show:
+      empty: Задач не найдено
+      tasks: Список моих задач
+    tasks:
+      name: Имя
+      state: Состояние
+      actions: Действия

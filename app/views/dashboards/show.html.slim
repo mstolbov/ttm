@@ -1,0 +1,6 @@
+h1 = t(".tasks")
+.tasks
+  - if @tasks.present?
+    = render "tasks"
+  - else
+    p = t(".empty")
