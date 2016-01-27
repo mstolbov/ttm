@@ -201,28 +201,28 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bcrypt (~> 3.1.7)!
-  byebug!
-  cocoon!
-  coffee-rails (~> 4.1.0)!
-  config!
-  factory_girl_rails!
-  kaminari!
-  pg!
-  puma!
-  rails (= 4.2.5.1)!
-  rails-assets-bootstrap!
-  rails-assets-jquery!
-  rails-assets-jquery-ujs!
-  rails-assets-trix!
-  rails_12factor!
+  bcrypt (~> 3.1.7)
+  byebug
+  cocoon
+  coffee-rails (~> 4.1.0)
+  config
+  factory_girl_rails
+  kaminari
+  pg
+  puma
+  rails (= 4.2.5.1)
+  rails-assets-bootstrap
+  rails-assets-jquery
+  rails-assets-jquery-ujs
+  rails-assets-trix
+  rails_12factor
   refile!
-  sass-rails!
-  simple_form!
-  slim-rails!
-  state_machines-activerecord!
-  validates!
-  web-console (~> 2.0)!
+  sass-rails
+  simple_form
+  slim-rails
+  state_machines-activerecord
+  validates
+  web-console (~> 2.0)
 
 BUNDLED WITH
    1.11.2
