@@ -5,3 +5,9 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+Settings.seeds.users.each do |u|
+  user = User.find_or_initialize_by(email: u.email)
+  user.password = u.password
+  user.save!
+end

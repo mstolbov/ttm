@@ -1,0 +1,8 @@
+seeds:
+  users:
+    - email: admin@ttm.com
+      password: admin
+    - email: manager@ttm.com
+      password: manager
+    - email: developer@ttm.com
+      password: developer
