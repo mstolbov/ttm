@@ -1,5 +1,5 @@
 class TrixEditorInput < SimpleForm::Inputs::StringInput
-  def input
+  def input(wrapper_options)
     id = "trix-#{attribute_name}"
     [
       @builder.hidden_field(attribute_name, input_html_options.merge(id: id)),
