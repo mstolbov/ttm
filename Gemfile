@@ -5,6 +5,7 @@ source 'https://rubygems.org' do
   gem 'pg'
   gem 'state_machines-activerecord'
   gem 'validates'
+  gem 'rails_12factor', group: :production
 
   gem 'sass-rails'
   gem 'coffee-rails', '~> 4.1.0'
