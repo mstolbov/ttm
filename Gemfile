@@ -39,4 +39,5 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery'
   gem 'rails-assets-jquery-ujs'
   gem 'rails-assets-bootstrap'
+  gem 'rails-assets-trix'
 end

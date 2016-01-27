@@ -1,8 +1,7 @@
 .row
-  .span2
-  .span9
-    = f.input :name, input_html: { class: 'span8' }
-    = f.input :description, input_html: { class: 'span8' }
+  .span
+    = f.input :name
+    = f.input :description, as: :trix_editor
     h5 = t(".attachment")
     ul.list-group
       = f.simple_fields_for :attachments do |a|

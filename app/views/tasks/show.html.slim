@@ -21,7 +21,7 @@
   .row
     .col-md-12
       h4 = t('.description')
-      = task.description
+      = task.description.html_safe
   - if task.attachments.present?
     .row
       .col-md-12
