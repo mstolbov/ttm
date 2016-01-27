@@ -2,7 +2,7 @@ module CurrentUserConcern
   extend ActiveSupport::Concern
 
   included do
-    helper_method :current_user
+    helper_method :current_user, :signed_in?
   end
 
   def sign_in(user)
