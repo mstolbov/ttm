@@ -1,6 +1,7 @@
 class TasksController < ApplicationController
   def new
     @task = current_user.tasks.new
+    @task = @task.becomes TaskType
   end
 
   def show
@@ -9,10 +10,13 @@ class TasksController < ApplicationController
 
   def edit
     @task = current_user.tasks.find(params[:id])
+    @task = @task.becomes TaskType
   end
 
   def create
     @task = current_user.tasks.new task_params
+    @task = @task.becomes TaskType
+
     if @task.save
       flash_success
       redirect_to dashboard_path
@@ -24,6 +28,8 @@ class TasksController < ApplicationController
 
   def update
     @task = current_user.tasks.find(params[:id])
+    @task = @task.becomes TaskType
+
     if @task.update task_params
       flash_success
       redirect_to dashboard_path
@@ -43,6 +49,6 @@ class TasksController < ApplicationController
   private
 
   def task_params
-    params.require(:task).permit(:name, :description, :state_event)
+    params.require(:task).permit(:name, :description, :state_event, attachments_attributes: [:id, :_destroy, :file])
   end
 end

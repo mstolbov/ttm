@@ -22,3 +22,10 @@
     .col-md-12
       h4 = t('.description')
       = task.description
+  - if task.attachments.present?
+    .row
+      .col-md-12
+        h4 = t('.attachments')
+        ul
+        - task.attachments.each_with_index do |attach, i|
+          li = link_to attach.file_filename, attachment_url(attach, :file)

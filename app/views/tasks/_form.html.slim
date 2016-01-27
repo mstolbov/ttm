@@ -3,5 +3,14 @@
   .span9
     = f.input :name, input_html: { class: 'span8' }
     = f.input :description, input_html: { class: 'span8' }
+    h5 = t(".attachment")
+    ul.list-group
+      = f.simple_fields_for :attachments do |a|
+        = render "tasks/file_fields", f: a
+      li.links.control-group
+        = link_to_add_association f, :attachments, partial: "tasks/file_fields", class: "btn btn-small" do
+          span.btn.btn-default
+            span.glyphicon.glyphicon-plus
+            = t(".add_attachment")
 .form-actions
   = f.button :submit, t('.submit'), class: 'btn-primary pull-right'

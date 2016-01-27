@@ -12,6 +12,9 @@ source 'https://rubygems.org' do
   gem 'kaminari'
   gem 'config'
   gem 'simple_form'
+  # до релиза версии 0.6.3
+  gem "refile", require: "refile/rails", git: "https://github.com/refile/refile.git", branch: "master"
+  gem "cocoon"
 
   gem 'bcrypt', '~> 3.1.7'
 

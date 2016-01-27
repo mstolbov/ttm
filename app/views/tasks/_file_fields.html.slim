@@ -1,0 +1,7 @@
+li.nested-fields.list-group-item
+  .row
+    .col-md-1
+      = link_to_remove_association f, class: 'btn btn-mini btn-danger delete' do
+        span.glyphicon.glyphicon-trash
+    .col-md-9
+      = f.input :file, as: :attachment, direct: true, presigned: true, label: false

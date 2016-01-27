@@ -2,11 +2,11 @@ ru:
   app: Тимми менеджер задач
   events:
     start: Открыть
-    finish: Закончить
+    finish: Завершить
   states:
     new: Новый
     started: Открытый
-    finished: Законченный
+    finished: Завершенный
   welcome:
     index:
       empty: Задач не найдено
@@ -36,6 +36,7 @@ ru:
       new_task: Новая задача
     form:
       submit: Отправить
+      add_attachment: Добавить файл
     edit:
       task: Задача
     show:
@@ -46,4 +47,5 @@ ru:
       actions: Действия
       edit: Редактировать
       delete: Удалить
+      attachments: Прикрепленные файлы
 
