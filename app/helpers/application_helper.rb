@@ -33,4 +33,8 @@ module ApplicationHelper
     presenter = klass.new(model, self)
     yield(presenter) if block_given?
   end
+
+  def params_session_email
+    params[:session] && params[:session][:email]
+  end
 end

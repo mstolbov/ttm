@@ -1,0 +1,6 @@
+ru:
+  flash:
+    controllers:
+      sessions:
+        create:
+          error: Ошибка авторизации

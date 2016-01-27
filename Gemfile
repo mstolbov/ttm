@@ -11,6 +11,7 @@ source 'https://rubygems.org' do
   gem 'slim-rails'
   gem 'kaminari'
   gem 'config'
+  gem 'simple_form'
 
   gem 'bcrypt', '~> 3.1.7'
 

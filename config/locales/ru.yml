@@ -8,3 +8,6 @@ ru:
       name: Имя
       state: Состояние
       user: Пользователь
+  sessions:
+    new:
+      submit: Войти

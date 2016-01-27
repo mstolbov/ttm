@@ -2,6 +2,8 @@ require 'test_helper'
 
 class WelcomeControllerTest < ActionController::TestCase
   setup do
+    user = create :user
+    sign_in user
     @tasks = create_list :task, 15
   end
 
