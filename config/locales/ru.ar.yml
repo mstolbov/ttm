@@ -1,0 +1,10 @@
+ru:
+  activerecord:
+    errors:
+      models:
+        task:
+          attributes:
+            name:
+              blank: не может быть пустым
+            description:
+              blank: не может быть пустым

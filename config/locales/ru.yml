@@ -1,5 +1,12 @@
 ru:
   app: Timmy менеджер задач
+  events:
+    start: Открыть
+    finish: Закончить
+  states:
+    new: Новый
+    started: Открытый
+    finished: Законченный
   welcome:
     index:
       empty: Задач не найдено
@@ -15,7 +22,28 @@ ru:
     show:
       empty: Задач не найдено
       tasks: Список моих задач
+      actions: Действия
+      add_task: Добавить задачу
     tasks:
       name: Имя
       state: Состояние
       actions: Действия
+      event: Действие
+      edit: Редактировать
+      delete: Удалить
+  tasks:
+    new:
+      new_task: Новая задача
+    form:
+      submit: Отправить
+    edit:
+      task: Задача
+    show:
+      task: Задача
+      name: Имя
+      description: Описание
+      state: Состояние
+      actions: Действия
+      edit: Редактировать
+      delete: Удалить
+

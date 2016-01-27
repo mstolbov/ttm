@@ -1,0 +1,7 @@
+.row
+  .span2
+  .span9
+    = f.input :name, input_html: { class: 'span8' }
+    = f.input :description, input_html: { class: 'span8' }
+.form-actions
+  = f.button :submit, t('.submit'), class: 'btn-primary pull-right'

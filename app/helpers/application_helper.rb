@@ -37,4 +37,15 @@ module ApplicationHelper
   def params_session_email
     params[:session] && params[:session][:email]
   end
+
+  def state_btn_class(event)
+    case event
+    when :new
+      "btn-info"
+    when :start
+      "btn-warning"
+    when :finish
+      "btn-success"
+    end
+  end
 end

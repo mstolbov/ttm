@@ -1,3 +1,8 @@
+- content_for :sidebar
+  h3 = t(".actions")
+  ul.nav.nav-list
+    li= link_to t(".add_task"), new_task_path
+
 h1 = t(".tasks")
 .tasks
   - if @tasks.present?

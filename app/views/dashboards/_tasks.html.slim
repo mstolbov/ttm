@@ -1,16 +1,37 @@
 table.table.table-striped
   thead
     tr
+      th #
       th = t(".name")
       th = t(".state")
       th = t(".actions")
   tbody
-    - @tasks.each do |task|
-      - present(task) do |task_p|
+    - @tasks.each do |task_raw|
+      - present(task_raw) do |task|
         tr
-          td = task_p
+          td = task.id
+          td = link_to task, task_path(task)
           td
-            span.label class=task_p.state_label_class = task_p.state
+            span.label class=task.state_label_class
+              span.glyphicon.glyphicon-ok
+              = t("states.#{task.state}")
           td
+            .row
+              .dropdown
+                button.btn.btn-default.dropdown-toggle id="task#{task.id}" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                  = t(".event")
+                  span.caret
+                ul.dropdown-menu aria-labelledby="task#{task.id}"
+                  - task.state_events.each do |e|
+                    li = link_to t("events.#{e}"), task_path(task, {task: {state_event: e}}), method: :put
+                  li.divider role="separator"
+                  li = link_to edit_task_path(task) do
+                    span.col-md-offset-1.glyphicon.glyphicon-pencil
+                    = t('.edit')
+                  li = link_to task_path(task), method: :delete do
+                    span.col-md-offset-1.glyphicon.glyphicon-trash
+                    = t('.delete')
+
 
 = paginate @tasks
+

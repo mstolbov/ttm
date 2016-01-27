@@ -1,0 +1,24 @@
+- content_for :sidebar
+  h3 = t(".actions")
+  ul.nav.nav-list
+    - @task.state_events.each do |e|
+      li= link_to t("events.#{e}"), task_path(@task, {task: {state_event: e}}), method: :put
+    hr
+    li= link_to t(".edit"), edit_task_path(@task)
+    li= link_to t(".delete"), task_path(@task), method: :delete
+
+- present(@task) do |task|
+  h1 = "#{t('.task')} ##{task.id}"
+  .row
+    .col-md-9
+      h4 = t('.name')
+      = task.name
+    .col-md-3
+      h4
+        = t('.state')
+      span.label class=task.state_label_class
+        = t("states.#{task.state}")
+  .row
+    .col-md-12
+      h4 = t('.description')
+      = task.description

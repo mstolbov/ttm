@@ -14,7 +14,7 @@ class Task < ActiveRecord::Base
     end
 
     event :finish do
-      transition [:new, :started] => :started
+      transition [:new, :started] => :finished
     end
   end
 
