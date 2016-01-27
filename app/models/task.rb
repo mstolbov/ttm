@@ -17,4 +17,8 @@ class Task < ActiveRecord::Base
       transition [:new, :started] => :started
     end
   end
+
+  def to_s
+    name
+  end
 end

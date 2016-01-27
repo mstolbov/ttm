@@ -4,7 +4,7 @@ html lang="ru"
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
-    title= content_for?(:title) ? yield(:title) : "Timmy tracker"
+    title= content_for?(:title) ? yield(:title) : t("app")
     = stylesheet_link_tag "application", media: "all"
     = javascript_include_tag "application"
     = csrf_meta_tags
@@ -16,7 +16,7 @@ html lang="ru"
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.navbar-brand href="#" Timmy tracker
+          a.navbar-brand href="#" = t("app")
           .navbar-collapse.collapse.navbar-responsive-collapse
             ul.nav.navbar-nav
               li= link_to "Link 1", "/path1"

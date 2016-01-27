@@ -1,2 +1,6 @@
-h1 Welcome#index
-p Find me in app/views/welcome/index.html.erb
+h1 = t(".tasks")
+.tasks
+  - if @tasks.present?
+    = render "tasks"
+  - else
+    p = t(".empty")

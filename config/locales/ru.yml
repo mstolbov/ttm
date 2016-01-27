@@ -1,0 +1,10 @@
+ru:
+  app: Timmy менеджер задач
+  welcome:
+    index:
+      empty: Задач не найдено
+      tasks: Список задач
+    tasks:
+      name: Имя
+      state: Состояние
+      user: Пользователь

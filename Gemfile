@@ -9,6 +9,8 @@ source 'https://rubygems.org' do
   gem 'sass-rails'
   gem 'coffee-rails', '~> 4.1.0'
   gem 'slim-rails'
+  gem 'kaminari'
+  gem 'config'
 
   gem 'bcrypt', '~> 3.1.7'
 
